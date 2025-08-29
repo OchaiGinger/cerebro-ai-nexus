@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-all duration-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -18,12 +18,18 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // CEREBRO Custom Variants
+        hero: "bg-gradient-button text-background font-heading font-bold shadow-glow hover:shadow-neural hover:scale-105 transform transition-all duration-400",
+        heroOutline: "border-2 border-foreground bg-transparent text-foreground font-heading font-bold hover:bg-foreground hover:text-background hover:shadow-glow",
+        glass: "glass-card text-foreground font-medium hover:shadow-glow hover:scale-105 transform",
+        neural: "bg-cerebro-violet text-background font-bold shadow-neural hover:bg-primary-glow hover:shadow-glow hover:scale-110 transform",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        icon: "h-10 w-10",
+        default: "h-12 px-6 py-3 text-base rounded-xl",
+        sm: "h-10 px-4 py-2 text-sm rounded-lg",
+        lg: "h-16 px-10 py-4 text-lg rounded-2xl",
+        xl: "h-20 px-12 py-5 text-xl rounded-3xl",
+        icon: "h-12 w-12 rounded-xl",
       },
     },
     defaultVariants: {

@@ -2,41 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* CEREBRO AI Design System - Futuristic Corporate Theme
+All colors MUST be HSL. Gradient meshes, glassmorphism, neural patterns.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    /* Core Brand Colors - Deep Indigo to Violet to Cyan Blue */
+    --cerebro-indigo: 239 45% 23%;
+    --cerebro-violet: 254 77% 71%;
+    --cerebro-cyan: 194 100% 50%;
+    --cerebro-violet-dark: 254 45% 45%;
+    
+    /* Background System */
+    --background: 239 45% 8%;
+    --foreground: 210 40% 98%;
+    --surface: 239 35% 12%;
+    --surface-elevated: 239 30% 16%;
+    
+    /* Glass Morphism */
+    --glass-bg: 239 45% 23% / 0.1;
+    --glass-border: 254 77% 71% / 0.2;
+    --glass-shadow: 239 45% 8% / 0.3;
+    
+    /* Interactive Elements */
+    --card: 239 35% 12%;
+    --card-foreground: 210 40% 98%;
+    --card-glass: 239 45% 23% / 0.1;
+    
+    --popover: 239 35% 12%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Brand Primary - Electric Violet */
+    --primary: 254 77% 71%;
+    --primary-foreground: 239 45% 8%;
+    --primary-glow: 254 77% 85%;
+    
+    /* Secondary - Deep Indigo */
+    --secondary: 239 45% 23%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Accent - Cyan Blue */
+    --accent: 194 100% 50%;
+    --accent-foreground: 239 45% 8%;
+    --accent-glow: 194 100% 70%;
+    
+    /* Neutral System */
+    --muted: 239 20% 25%;
+    --muted-foreground: 210 15% 65%;
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    /* UI Elements */
+    --border: 239 30% 20%;
+    --input: 239 30% 16%;
+    --ring: 254 77% 71%;
+    
+    /* Neural Network Animation Colors */
+    --neural-primary: 254 77% 71% / 0.6;
+    --neural-secondary: 194 100% 50% / 0.4;
+    --neural-pulse: 254 77% 85% / 0.8;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cerebro-indigo)), hsl(var(--cerebro-violet)), hsl(var(--cerebro-cyan)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--surface)), hsl(var(--surface-elevated)));
+    --gradient-button: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--accent-glow)));
+    
+    /* Shadows */
+    --shadow-glass: 0 8px 32px hsl(var(--glass-shadow));
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-neural: 0 0 20px hsl(var(--neural-pulse));
+    
+    /* Typography Scale */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-accent: 'Poppins', cursive;
+    
+    /* Animation Timings */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-neural: all 2s ease-in-out infinite;
+    
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +149,134 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    overflow-x: hidden;
+  }
+
+  /* Typography Classes */
+  .heading-hero {
+    @apply font-heading font-black text-4xl md:text-6xl lg:text-7xl leading-tight;
+    font-weight: 900;
+  }
+  
+  .heading-section {
+    @apply font-heading font-extrabold text-2xl md:text-4xl lg:text-5xl;
+    font-weight: 800;
+  }
+  
+  .heading-card {
+    @apply font-heading font-bold text-xl md:text-2xl;
+    font-weight: 700;
+  }
+  
+  .text-accent {
+    font-family: var(--font-accent);
+    @apply italic;
+  }
+
+  /* Glass Morphism Effects */
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .glass-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glass), var(--shadow-glow);
+  }
+
+  /* Neural Network Background Animation */
+  .neural-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .neural-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 30%, hsl(var(--neural-primary)) 0%, transparent 50%),
+      radial-gradient(circle at 70% 60%, hsl(var(--neural-secondary)) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--neural-pulse)) 0%, transparent 30%);
+    animation: neural-pulse 6s ease-in-out infinite;
+    opacity: 0.3;
+  }
+  
+  @keyframes neural-pulse {
+    0%, 100% { 
+      transform: scale(1) rotate(0deg);
+      opacity: 0.3;
+    }
+    50% { 
+      transform: scale(1.1) rotate(5deg);
+      opacity: 0.5;
+    }
+  }
+
+  /* Circuit Pattern Overlay */
+  .circuit-pattern {
+    position: relative;
+  }
+  
+  .circuit-pattern::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(hsl(var(--accent) / 0.1) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: var(--gradient-button);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Scroll Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition-smooth);
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hero Section Specific */
+  .hero-gradient {
+    background: var(--gradient-hero);
+    position: relative;
+  }
+  
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(ellipse at center, transparent 0%, hsl(var(--background) / 0.3) 100%);
   }
 }
