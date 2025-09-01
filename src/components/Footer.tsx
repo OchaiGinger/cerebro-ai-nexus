@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Brain, Linkedin, Twitter, Globe } from "lucide-react";
+import { Linkedin, Twitter, Globe } from "lucide-react"; // removed Brain
 
 const Footer = () => {
   return (
@@ -9,10 +9,16 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <Brain className="w-8 h-8 text-primary" />
+              <img
+                src="/cerebro.png"
+                alt="Cerebro Logo"
+                className="w-8 h-8 object-contain"
+              />
               <div>
                 <span className="heading-card gradient-text">CEREBRO</span>
-                <p className="text-xs text-muted-foreground font-accent">AI-Powered Solutions</p>
+                <p className="text-xs text-muted-foreground font-accent">
+                  AI-Powered Solutions
+                </p>
               </div>
             </div>
             <p className="text-muted-foreground">
@@ -66,12 +72,8 @@ const Footer = () => {
                 Makurdi, Benue State<br />
                 Nigeria
               </p>
-              <p className="text-muted-foreground">
-                08142929058
-              </p>
-              <p className="text-muted-foreground">
-                info@cerebroai.com
-              </p>
+              <p className="text-muted-foreground">08142929058</p>
+              <p className="text-muted-foreground">info@cerebroai.com</p>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
