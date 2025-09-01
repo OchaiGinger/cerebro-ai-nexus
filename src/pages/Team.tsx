@@ -5,6 +5,8 @@ import teamMember1 from "@/assets/team-member-1.jpg";
 import teamMember2 from "@/assets/team-member-2.jpg";
 import teamMember3 from "@/assets/team-member-3.jpg";
 import teamMember4 from "@/assets/team-member-4.jpg";
+import teamMember5 from "@/assets/team-member-5.jpg";
+import teamMember6 from "@/assets/team-member-6.jpg";
 
 const Team = () => {
   const teamMembers = [
@@ -56,7 +58,7 @@ const Team = () => {
       id: 5,
       name: "Dr. Kemi Adebisi",
       role: "AI Ethics & Governance Lead",
-      image: teamMember2,
+      image: teamMember5,
       bio: "Ensuring responsible AI development and deployment through comprehensive ethics frameworks and governance policies. PhD in AI Ethics from Oxford University with focus on algorithmic fairness and bias mitigation.",
       expertise: ["AI Ethics", "Algorithmic Fairness", "Bias Mitigation", "AI Governance"],
       linkedin: "#",
@@ -67,7 +69,7 @@ const Team = () => {
       id: 6,
       name: "Ibrahim Musa",
       role: "AI Solutions Architect",
-      image: teamMember3,
+      image: teamMember6,
       bio: "Designing and implementing scalable AI architectures for enterprise clients. Expert in cloud-native AI solutions and distributed computing with focus on performance optimization and cost efficiency.",
       expertise: ["Solution Architecture", "Cloud Computing", "Distributed Systems", "Performance Optimization"],
       linkedin: "#",
