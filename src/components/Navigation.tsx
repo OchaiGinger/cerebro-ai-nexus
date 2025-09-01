@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Brain } from "lucide-react";
+import { Menu, X } from "lucide-react"; // removed Brain
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,12 +24,18 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Brain className="w-10 h-10 text-primary group-hover:text-accent transition-colors duration-300" />
+              <img
+                src="/cerebro.png"
+                alt="Cerebro Logo"
+                className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
+              />
               <div className="absolute inset-0 blur-md bg-primary/20 group-hover:bg-accent/20 transition-colors duration-300" />
             </div>
             <div>
               <span className="heading-card gradient-text">CEREBRO</span>
-              <p className="text-xs text-muted-foreground font-accent">AI-Powered Solutions</p>
+              <p className="text-xs text-muted-foreground font-accent">
+                AI-Powered Solutions
+              </p>
             </div>
           </Link>
 
