@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto space-y-8 fade-in">
             <p className="text-accent font-accent text-lg">Get In Touch</p>
-            <h1 className="heading-hero gradient-text">
+            <h1 className="heading-hero text-white">
               Let's Build the Future Together
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
@@ -260,7 +260,7 @@ const Contact = () => {
       <section className="py-24 hero-gradient neural-bg">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto space-y-8 fade-in">
-            <h2 className="heading-section gradient-text">
+            <h2 className="heading-section text-white">
               Ready to Embrace the AI Revolution?
             </h2>
             <p className="text-xl text-muted-foreground">

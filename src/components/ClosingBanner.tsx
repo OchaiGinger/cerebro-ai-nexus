@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Rocket, ArrowRight } from "lucide-react";
 
 const ClosingBanner = () => {
-  return (
-    <section className="py-24 hero-gradient neural-bg relative overflow-hidden">
+   return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-3 h-3 bg-primary-glow rounded-full animate-pulse opacity-60" />
-        <div className="absolute bottom-32 right-16 w-2 h-2 bg-accent-glow rounded-full animate-pulse delay-1000 opacity-60" />
-        <div className="absolute top-1/2 left-1/4 w-1.5 h-1.5 bg-primary rounded-full animate-pulse delay-2000 opacity-60" />
-        <div className="absolute top-40 right-1/3 w-2.5 h-2.5 bg-accent rounded-full animate-pulse delay-500 opacity-60" />
+        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60" />
+        <div className="absolute top-40 right-20 w-1 h-1 bg-blue-300 rounded-full animate-pulse opacity-50" style={{animationDelay: '1s'}} />
+        <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse opacity-60" style={{animationDelay: '2s'}} />
+        <div className="absolute top-60 left-1/3 w-1 h-1 bg-blue-300 rounded-full animate-pulse opacity-50" style={{animationDelay: '0.5s'}} />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -23,11 +23,11 @@ const ClosingBanner = () => {
           </div>
 
           {/* Main Text */}
-          <h2 className="heading-section gradient-text">
+          <h2 className="heading-section text-white">
             Your AI Transformation Starts Here
           </h2>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed">
             Ready to unlock the full potential of artificial intelligence for your business? 
             Join hundreds of companies already transforming with CEREBRO's cutting-edge AI solutions.
           </p>
@@ -44,7 +44,7 @@ const ClosingBanner = () => {
                 <div className="heading-card gradient-text text-3xl md:text-4xl mb-2">
                   {stat.value}
                 </div>
-                <p className="text-muted-foreground font-medium">
+                <p className="text-white font-medium">
                   {stat.label}
                 </p>
               </div>
@@ -61,7 +61,7 @@ const ClosingBanner = () => {
           </div>
 
           {/* Supporting Text */}
-          <p className="text-accent font-accent text-lg mt-6">
+          <p className=" text-white text-accent font-accent text-lg mt-6">
             Free consultation • Custom AI solutions • Proven results
           </p>
         </div>

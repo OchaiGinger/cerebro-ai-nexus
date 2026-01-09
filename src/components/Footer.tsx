@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-heading font-bold text-lg text-foreground">Quick Links</h3>
+            <h3 className="text-white font-heading font-bold text-lg text-foreground">Quick Links</h3>
             <div className="space-y-2">
               {[
                 { href: "/", label: "Home" },
@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="font-heading font-bold text-lg text-foreground">Services</h3>
+            <h3 className="text-white font-heading font-bold text-lg text-foreground">Services</h3>
             <div className="space-y-2">
               {[
                 "Machine Learning",
@@ -66,14 +66,14 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-heading font-bold text-lg text-foreground">Connect</h3>
+            <h3 className="text-white font-heading font-bold text-lg text-foreground">Connect</h3>
             <div className="space-y-2">
-              <p className="text-muted-foreground">
+              <p className="text-white">
                 Makurdi, Benue State<br />
                 Nigeria
               </p>
-              <p className="text-muted-foreground">08142929058</p>
-              <p className="text-muted-foreground">info@cerebroai.com</p>
+              <p className="text-white">08142929058</p>
+              <p className="text-white">info@cerebroai.com</p>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border/20 mt-12 pt-8 text-center">
-          <p className="text-muted-foreground">
+          <p className="text-white text-sm">
             © 2024 CEREBRO AI-Powered Solutions. All rights reserved.
           </p>
           <p className="text-accent font-accent text-sm mt-2">

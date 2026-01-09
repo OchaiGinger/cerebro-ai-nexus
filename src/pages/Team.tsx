@@ -119,10 +119,10 @@ const Team = () => {
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto space-y-8 fade-in">
             <p className="text-accent font-accent text-lg">Our Expert Team</p>
-            <h1 className="heading-hero gradient-text">
+            <h1 className="heading-hero text-white">
               Meet the Visionaries Behind CEREBRO
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed max-w-3xl mx-auto">
               Our world-class team of AI researchers, data scientists, and engineers brings together 
               decades of experience from leading institutions and technology companies.
             </p>
