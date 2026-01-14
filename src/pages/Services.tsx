@@ -59,10 +59,10 @@ const Services = () => {
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto space-y-8 fade-in">
             <p className="text-accent font-accent text-lg">AI Services & Technology</p>
-            <h1 className="heading-hero gradient-text">
+            <h1 className="heading-hero text-white leading-tight">
               Transformative AI Solutions for Every Business Need
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed max-w-3xl mx-auto">
               From machine learning to computer vision, our comprehensive suite of AI services 
               empowers organizations to harness the full potential of artificial intelligence.
             </p>
@@ -77,7 +77,7 @@ const Services = () => {
             <h2 className="heading-section text-foreground mb-6">
               Our AI Services Portfolio
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Explore our comprehensive range of AI services designed to drive innovation 
               and accelerate your digital transformation journey.
             </p>
@@ -196,10 +196,10 @@ const Services = () => {
       <section className="py-24 hero-gradient neural-bg">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto space-y-8 fade-in">
-            <h2 className="heading-section gradient-text">
+            <h2 className="heading-section text-white">
               Ready to Transform Your Business with AI?
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white leading-relaxed">
               Let our experts help you identify the perfect AI solution for your unique challenges. 
               Schedule a consultation to discuss your project requirements.
             </p>

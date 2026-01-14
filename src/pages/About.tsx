@@ -40,12 +40,12 @@ const About = () => {
             <div className="space-y-8 fade-in">
               <div>
                 <p className="text-accent font-accent text-lg mb-4">About CEREBRO</p>
-                <h1 className="heading-hero gradient-text leading-tight">
+                <h1 className="heading-hero text-white leading-tight">
                   Building the AI Future
                 </h1>
               </div>
               
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-white leading-relaxed">
                 We are visionaries, engineers, and innovators united by a common goal: 
                 to harness the transformative power of artificial intelligence and make it 
                 accessible to businesses worldwide.
@@ -203,10 +203,10 @@ const About = () => {
       <section className="py-24 hero-gradient neural-bg">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto space-y-8 fade-in">
-            <h2 className="heading-section gradient-text">
+            <h2 className="heading-section text-white">
               Ready to Transform Your Business?
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white leading-relaxed">
               Join us on the journey to an AI-powered future. Let's explore how CEREBRO 
               can revolutionize your business operations.
             </p>

@@ -62,7 +62,7 @@ const Contact = () => {
             <h1 className="heading-hero text-white">
               Let's Build the Future Together
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed max-w-3xl mx-auto">
               Ready to transform your business with AI? Our team of experts is here to help you 
               navigate your AI journey and unlock new possibilities for growth.
             </p>
@@ -263,7 +263,7 @@ const Contact = () => {
             <h2 className="heading-section text-white">
               Ready to Embrace the AI Revolution?
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white leading-relaxed">
               Contact us today and take the first step towards transforming your business 
               with cutting-edge artificial intelligence solutions.
             </p>

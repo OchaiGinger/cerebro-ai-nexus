@@ -159,11 +159,11 @@ const Team = () => {
                 {/* Card Content */}
                 <div className="p-8 space-y-6">
                   <div>
-                    <h3 className="heading-card text-foreground mb-2">{member.name}</h3>
+                    <h3 className="heading-card text-white mb-2">{member.name}</h3>
                     <p className="text-primary font-medium mb-4">{member.role}</p>
                   </div>
                   
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <p className="text-white leading-relaxed text-sm">
                     {member.bio}
                   </p>
                   
@@ -306,7 +306,7 @@ const Team = () => {
       <section className="py-24 hero-gradient neural-bg">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto space-y-8 fade-in">
-            <h2 className="heading-section gradient-text">
+            <h2 className="heading-section text-white">
               Ready to Work with Our Experts?
             </h2>
             <p className="text-xl text-muted-foreground">

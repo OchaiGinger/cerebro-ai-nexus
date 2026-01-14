@@ -30,7 +30,7 @@ const HeroSection = () => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -50,6 +50,19 @@ const HeroSection = () => {
         <div className="absolute top-60 left-1/3 w-1 h-1 bg-blue-300 rounded-full animate-pulse opacity-50" style={{animationDelay: '0.5s'}} />
       </div>
 
+
+      {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/heronew.jpg')",
+          }}
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-blue-950/80" />
+
+        
       <div className="container mx-auto px-6 text-center relative z-10 pb-24">
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Accent Text */}
@@ -60,28 +73,33 @@ const HeroSection = () => {
           </div>
           
           {/* Main Headline */}
-          <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_0.4s_forwards]">
+          {/* <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_0.4s_forwards]"> */}
+            <div className="animate-[fadeIn_0.6s_ease-in_0.4s_forwards]">
+
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {slides[currentSlide].title}
             </h1>
           </div>
           
           {/* Subtitle */}
-          <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_0.6s_forwards]">
+          {/* <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_0.6s_forwards]"> */}
+          <div className="animate-[fadeIn_0.6s_ease-in_0.4s_forwards]">
+
             <p className="text-2xl md:text-3xl font-semibold text-white max-w-3xl mx-auto leading-relaxed">
               {slides[currentSlide].subtitle}
             </p>
           </div>
           
           {/* Description */}
-          <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_0.8s_forwards]">
+          {/* <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_0.8s_forwards]"> */}
+          <div className="animate-[fadeIn_0.6s_ease-in_0.4s_forwards]">
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
               {slides[currentSlide].description}
             </p>
           </div>
           
           {/* CTA Buttons */}
-          <div className="opacity-0 animate-[fadeIn_0.6s_ease-in_1s_forwards] flex flex-col sm:flex-row gap-6 justify-center items-center pt-4">
+          <div className="animate-[fadeIn_0.6s_ease-in_1s_forwards] flex flex-col sm:flex-row gap-6 justify-center items-center pt-4">
             <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center">
               <Sparkles className="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" />
               Discover Our Solutions
